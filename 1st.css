@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+  background-image:url("images/background-unsplash.png");
+}
+
+ul{
+  list-style-type: none;
+  margin: 20px;
+  padding: 10px;
+  overflow:scroll; 
+	display:contents;
+  background-color:skyblue;
+  position:inherit;
+  top: 15px;
+  width: 80%;
+}
+
+
+* {
+    box-sizing:content-box;
+}
+
+
+
+
+.flex-container {
+    display: flex;
+	justify-content:center;
+    flex-wrap:wrap;
+    background-color:antiquewhite;
+}
+
+.stack > div {
+    flex-direction: column;
+	background-color:aqua;
+	margin: 10px;
+    padding: 15px;
+}
+.flex-container > div {
+	flex-direction: column;
+    background-color:orchid;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+.flex-responsive > div{
+	align-content: center;
+	background-color: aqua;
+	margin: 10px;
+	padding: 15px;
+	font:italic;
+	font-size: 20px;
+}
+	
+	.section_L {
+    flex-grow: 3;
+}
+.section_R {
+    flex-grow: 2;
+}
+.flex-responsive {
+    flex: 30%;
+}
+.flex-item-left{
+	background-color: aqua;
+padding: 15px;
+flex: 50%;
+}
+.flex-item-right{
+	background-color: cornflowerblue;
+	padding: 15px;
+	flex:50%;
+	
+}
+#container {align-content: center;
+	
+    width: 800px;
+    margin: 0 auto;
+
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 799px) {
+#container {
+    width: 90%;
+    margin: 0 auto;
+    background-color:floralwhite;
+}
+.flex-responsive {
+    flex: 100%;
+}
+	
+	}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer {
+  background-color:antiquewhite;
+  text-align: center;
+  padding: 10px;
+}
